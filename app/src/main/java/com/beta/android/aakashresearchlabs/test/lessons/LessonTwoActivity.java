@@ -8,6 +8,13 @@ import android.support.v7.widget.RecyclerView;
 import com.beta.android.aakashresearchlabs.test.ChapterAdapter;
 import com.beta.android.aakashresearchlabs.test.ChapterClass;
 import com.beta.android.aakashresearchlabs.test.Lesson2.L2C1;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C2;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C3;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C4;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C5;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C6;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C7;
+import com.beta.android.aakashresearchlabs.test.Lesson2.L2C8;
 import com.beta.android.aakashresearchlabs.test.R;
 
 import java.util.ArrayList;
@@ -30,9 +37,15 @@ public class LessonTwoActivity extends AppCompatActivity {
         //Setting the recyclerView to have linearLayout
         recyclerView.setLayoutManager(layoutManager);
         chapterList=new ArrayList();
-        chapterList.add(new ChapterClass("Git Basics","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",L2C1.class));
-        chapterList.add(new ChapterClass("Intro to web","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C1.class));
-       adapter = new ChapterAdapter(chapterList,getApplicationContext());
+        chapterList.add(new ChapterClass("HTML basics","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",L2C1.class));
+        chapterList.add(new ChapterClass("Anatomy of an HTML element","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C2.class));
+        chapterList.add(new ChapterClass("Nesting elements","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C3.class));
+        chapterList.add(new ChapterClass("Anatomy of an HTML document","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C4.class));
+        chapterList.add(new ChapterClass("Images","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C5.class));
+        chapterList.add(new ChapterClass("Marking up text","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C6.class));
+        chapterList.add(new ChapterClass("Links","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C7.class));
+        chapterList.add(new ChapterClass("Conclusion","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L2C8.class));
+        adapter = new ChapterAdapter(chapterList,getApplicationContext());
         //Adding adapter to recyclerView
         recyclerView.setAdapter(adapter);
 

@@ -80,7 +80,7 @@ public class LessonFragment extends Fragment {
             recyclerView.addItemDecoration(new MaterialViewPagerHeaderDecorator());
             LessonList=new ArrayList<>();
 
-            LessonList.add(new LessonClass("The story of your first website",6,LessonOneActivity.class));
+            LessonList.add(new LessonClass("First Meeting With Web Development",6,LessonOneActivity.class));
             LessonList.add(new LessonClass("The HandShake with HTML",8,LessonTwoActivity.class));
             LessonList.add(new LessonClass("Shaking Hands with Javascript",5,LessonThreeActivity.class));
             LessonList.add(new LessonClass("Shaking Hands with CSS",7,LessonFourActivity.class));

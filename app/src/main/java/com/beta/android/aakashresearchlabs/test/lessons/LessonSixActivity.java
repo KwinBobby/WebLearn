@@ -8,6 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import com.beta.android.aakashresearchlabs.test.ChapterAdapter;
 import com.beta.android.aakashresearchlabs.test.ChapterClass;
 import com.beta.android.aakashresearchlabs.test.Lesson6.L6C1;
+import com.beta.android.aakashresearchlabs.test.Lesson6.L6C2;
+import com.beta.android.aakashresearchlabs.test.Lesson6.L6C3;
+import com.beta.android.aakashresearchlabs.test.Lesson6.L6C4;
+import com.beta.android.aakashresearchlabs.test.Lesson6.L6C5;
+import com.beta.android.aakashresearchlabs.test.Lesson6.L6C6;
 import com.beta.android.aakashresearchlabs.test.R;
 
 import java.util.ArrayList;
@@ -30,11 +35,12 @@ public class LessonSixActivity extends AppCompatActivity {
         //Setting the recyclerView to have linearLayout
         recyclerView.setLayoutManager(layoutManager);
         chapterList=new ArrayList();
-        chapterList.add(new ChapterClass("Git Basics","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C1.class));
-        chapterList.add(new ChapterClass("Intro to web","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", L6C1.class));
-        chapterList.add(new ChapterClass("What is HTML","Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ", L6C1.class));
-        chapterList.add(new ChapterClass("What is CSS","Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ", L6C1.class));
-        chapterList.add(new ChapterClass("What is JavaScript"," Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.", L6C1.class));
+        chapterList.add(new ChapterClass("How the web works","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C1.class));
+        chapterList.add(new ChapterClass("Clients and servers","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C2.class));
+        chapterList.add(new ChapterClass("The other parts of the toolbox","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C3.class));
+        chapterList.add(new ChapterClass("So what happens, exactly?","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C4.class));
+        chapterList.add(new ChapterClass("DNS explained","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C5.class));
+        chapterList.add(new ChapterClass("Packets explained","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", L6C6.class));
         adapter = new ChapterAdapter(chapterList,getApplicationContext());
         //Adding adapter to recyclerView
         recyclerView.setAdapter(adapter);

@@ -153,7 +153,43 @@
         <activity android:name=".Lesson4.L4C1" />
         <activity android:name=".Lesson5.L5C1" />
         <activity android:name=".Lesson6.L6C1" />
-        <activity android:name=".Lesson7.L7C1"></activity>
+        <activity android:name=".Lesson7.L7C1" />
+        <activity android:name=".Lesson1.L1C2" />
+        <activity android:name=".Lesson1.L1C3" />
+        <activity android:name=".Lesson1.L1C4" />
+        <activity android:name=".Lesson1.L1C5" />
+        <activity android:name=".Lesson1.L1C6" />
+        <activity android:name=".Lesson2.L2C2" />
+        <activity android:name=".Lesson2.L2C3" />
+        <activity android:name=".Lesson2.L2C4" />
+        <activity android:name=".Lesson2.L2C6" />
+        <activity android:name=".Lesson2.L2C7" />
+        <activity android:name=".Lesson2.L2C8" />
+        <activity android:name=".Lesson3.L3C2" />
+        <activity android:name=".Lesson3.L3C3" />
+        <activity android:name=".Lesson3.L3C4" />
+        <activity android:name=".Lesson3.L3C5" />
+        <activity android:name=".Lesson2.L2C5" />
+        <activity android:name=".Lesson4.L4C2" />
+        <activity android:name=".Lesson4.L4C3" />
+        <activity android:name=".Lesson4.L4C4" />
+        <activity android:name=".Lesson4.L4C5" />
+        <activity android:name=".Lesson4.L4C6" />
+        <activity android:name=".Lesson4.L4C7" />
+        <activity android:name=".Lesson5.L5C2" />
+        <activity android:name=".Lesson5.L5C3" />
+        <activity android:name=".Lesson5.L5C4" />
+        <activity android:name=".Lesson5.L5C5" />
+        <activity android:name=".Lesson6.L6C2" />
+        <activity android:name=".Lesson6.L6C3" />
+        <activity android:name=".Lesson6.L6C4" />
+        <activity android:name=".Lesson6.L6C5" />
+        <activity android:name=".Lesson6.L6C6" />
+        <activity android:name=".Lesson7.L7C2" />
+        <activity android:name=".Lesson7.L7C3" />
+        <activity android:name=".Lesson7.L7C4" />
+        <activity android:name=".Lesson7.L7C5" />
+        <activity android:name=".Lesson7.L7C6"></activity>
     </application>
 
 </manifest>
