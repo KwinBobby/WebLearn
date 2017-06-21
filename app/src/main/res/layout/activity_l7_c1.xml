@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson7.L7C1">
-
-</android.support.constraint.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:text="Dynamic websites"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:text="Server-side programming topic is a series of modules that show how to create dynamic websites; websites that deliver customised information in response to HTTP requests. The modules provide a generic introduction to server-side programming, along with specific beginner-level guides on how to use the Django (Python) and Express (Node.js/JavaScript) web frameworks to create basic applications.
+Most major websites use some kind of server-side technology to dynamically display different data as required. For example, imagine how many products are available on Amazon, and imagine how many posts have been written on Facebook? Displaying all of these using completely different static pages would be completely inefficient, so instead such sites display static templates (built using HTML, CSS, and JavaScript), and then dynamically update the data displayed inside those templates when needed, e.g. when you want to view a different product on Amazon.
+In the modern world of web development, learning about server-side development is highly recommended.
+"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:paddingBottom="20dp"
+        android:text="Learning pathway"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:text="Getting started with server-side programming is usually easier than with client-side development, because dynamic websites tend to perform a lot of very similar operations (retrieving data from a database and displaying it in a page, validating user-entered data and saving it in a database, checking user permissions and logging users in, etc.), and are constructed using web frameworks that make these and other common web server operations easy.
+A basic knowledge of programming concepts (or of a particular programming language) is useful, but not essential. Similarly, expertise in client-side coding is not required, but a basic knowledge will help you work better with the developers creating your client-side web &#34; front end &#34;.
+You will need to understand &#34; how the web works &#34;. We recommend that you first read the following topics:&#10;
+•	What is a web server&#10;
+•	What software do I need to build a website?&#10;
+•	How do you upload files to a web server?&#10;
+With that basic understanding you'll be ready to work your way through the modules in this section.
+"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:paddingBottom="20dp"
+        android:text="Modules"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:text="This topic contains the following modules. You should start with the first module, then go on to one of the following modules, which show how to work with two very popular server-side languages using appropriate web frameworks . "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:paddingBottom="20dp"
+        android:text="Server-side website programming first steps"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:paddingBottom="20dp"
+        android:text="Django Web Framework (Python)"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:paddingBottom="20dp"
+        android:text="Express Web Framework (Node.js/JavaScript)"/>
+</LinearLayout>
+</ScrollView>

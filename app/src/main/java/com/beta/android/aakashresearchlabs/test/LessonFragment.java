@@ -36,6 +36,7 @@ public class LessonFragment extends Fragment {
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
     ArrayList<LessonClass> LessonList;
+    MyLessonRecyclerViewAdapter adapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -87,12 +88,19 @@ public class LessonFragment extends Fragment {
             LessonList.add(new LessonClass("Publishing a Website",5,LessonFiveActivity.class));
             LessonList.add(new LessonClass("Working of Web",6,LessonSixActivity.class));
             LessonList.add(new LessonClass("Knowing about accessibility",6,LessonSevenActivity.class));
-            MyLessonRecyclerViewAdapter adapter=new MyLessonRecyclerViewAdapter(LessonList,getActivity().getApplicationContext());
+           adapter=new MyLessonRecyclerViewAdapter(LessonList,getActivity().getApplicationContext());
             recyclerView.setAdapter(adapter);
+
         }
         return view;
     }
 
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        adapter.notifyDataSetChanged();
+    }
 
     @Override
     public void onAttach(Context context) {

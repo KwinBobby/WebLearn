@@ -73,6 +73,9 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ViewHold
                 {
                     holder.mark.setText("Mark as Complete");
                     holder.markImage.setVisibility(View.INVISIBLE);
+
+                    int progress = sharedPreferences.getInt(currentChapter.getParentLesson(), 0);
+                    sharedPreferences.edit().putInt(currentChapter.getParentLesson(), progress - 1).apply();
                     sharedPreferences.edit().putBoolean(currentChapter.getCtitle(),false).apply();
                     currentChapter.setCompleted(false);
                 }
@@ -80,6 +83,8 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ViewHold
                 {
                     holder.mark.setText("Mark as InComplete");
                     holder.markImage.setVisibility(View.VISIBLE);
+                    int progress = sharedPreferences.getInt(currentChapter.getParentLesson(), 0);
+                    sharedPreferences.edit().putInt(currentChapter.getParentLesson(), progress + 1).apply();
                     sharedPreferences.edit().putBoolean(currentChapter.getCtitle(),true).apply();
                     currentChapter.setCompleted(true);
 
@@ -93,7 +98,16 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ViewHold
                 Intent intent=new Intent(context,currentChapter.getCclass());
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
-                Toast.makeText(context, "going to course", Toast.LENGTH_SHORT).show();
+                if(holder.markImage.getVisibility()==View.INVISIBLE){
+                    int progress = sharedPreferences.getInt(currentChapter.getParentLesson(), 0);
+                    sharedPreferences.edit().putInt(currentChapter.getParentLesson(), progress + 1).apply();
+                }
+
+                sharedPreferences.edit().putBoolean(currentChapter.getCtitle(),true).apply();
+                currentChapter.setCompleted(true);
+                holder.mark.setText("Mark as InComplete");
+                holder.markImage.setVisibility(View.VISIBLE);
+                 Toast.makeText(context, "going to course", Toast.LENGTH_SHORT).show();
             }
         });
         //On clicking the view

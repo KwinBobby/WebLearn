@@ -8,6 +8,16 @@ public class ChapterClass {
     String Ctitle;
     String Ccontent;
     Class Cclass;
+    String parentLesson;
+
+    public String getParentLesson() {
+        return parentLesson;
+    }
+
+    public void setParentLesson(String parentLesson) {
+        this.parentLesson = parentLesson;
+    }
+
     boolean isCompleted;
 
     public Class getCclass() {
@@ -18,11 +28,12 @@ public class ChapterClass {
         Cclass = cclass;
     }
 
-    public ChapterClass(String a, String b, Class c)
+    public ChapterClass(String a, String b, Class c,String d)
     {
         Ctitle=a;
         Ccontent=b;
         Cclass=c;
+        parentLesson=d;
 
     }
 

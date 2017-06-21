@@ -2,6 +2,7 @@ package com.beta.android.aakashresearchlabs.test;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,10 +25,12 @@ public class MyLessonRecyclerViewAdapter extends RecyclerView.Adapter<MyLessonRe
 
     private final List<LessonClass> mValues;
     Context mcontext;
+    SharedPreferences sharedPreferences;
 
     public MyLessonRecyclerViewAdapter(List<LessonClass> items, Context c) {
         mValues = items;
         mcontext=c;
+        sharedPreferences=mcontext.getSharedPreferences(mcontext.getPackageName(),Context.MODE_PRIVATE);
     }
 
     @Override
@@ -42,9 +45,11 @@ public class MyLessonRecyclerViewAdapter extends RecyclerView.Adapter<MyLessonRe
 
         final LessonClass currentLesson=mValues.get(position);
         holder.LHeading.setText(currentLesson.getLHeading());
-        holder.chaptersCovered.setText("2/"+currentLesson.getTotalChapters());
+        String progressString="L"+(position+1);
+        int progressInt=sharedPreferences.getInt(progressString,0);
+        holder.chaptersCovered.setText(progressInt+"/"+currentLesson.getTotalChapters());
         holder.progress.setMaxValue(currentLesson.getTotalChapters());
-        holder.progress.setValue(2);
+        holder.progress.setValue(progressInt);
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
