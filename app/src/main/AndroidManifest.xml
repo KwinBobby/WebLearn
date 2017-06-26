@@ -189,7 +189,10 @@
         <activity android:name=".Lesson7.L7C3" />
         <activity android:name=".Lesson7.L7C4" />
         <activity android:name=".Lesson7.L7C5" />
-        <activity android:name=".Lesson7.L7C6"></activity>
+        <activity android:name=".Lesson7.L7C6" />
+        <activity android:name=".CommonTestActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/ChapterTheme"></activity>
     </application>
 
 </manifest>

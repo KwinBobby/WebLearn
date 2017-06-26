@@ -9,18 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.beta.android.aakashresearchlabs.test.LessonFragment.OnListFragmentInteractionListener;
 import com.beta.android.aakashresearchlabs.test.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 
 import at.grabner.circleprogress.CircleProgressView;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class MyLessonRecyclerViewAdapter extends RecyclerView.Adapter<MyLessonRecyclerViewAdapter.ViewHolder> {
 
     private final List<LessonClass> mValues;

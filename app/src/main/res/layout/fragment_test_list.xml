@@ -6,8 +6,10 @@
     android:name="com.beta.android.aakashresearchlabs.test.TestFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="8dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
+    android:clipToPadding="false"
     app:layoutManager="LinearLayoutManager"
     tools:context="com.beta.android.aakashresearchlabs.test.TestFragment"
     tools:listitem="@layout/fragment_test" />

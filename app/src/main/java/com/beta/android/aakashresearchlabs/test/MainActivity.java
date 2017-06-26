@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-
+        new ListOfQuestions().fillquestion();
 
 
         mViewPager.getViewPager().setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
