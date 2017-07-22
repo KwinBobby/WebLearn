@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson6.L6C3">
-
-</android.support.constraint.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="The client and server we've described above don't tell the whole story. There are many other parts involved, and we'll describe them below.
+For now, let's imagine that the Web is a road. On one end of the road is the client, which is like your house. On the other end of the road is the server, which is a shop you want to buy something from.
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/c6_3p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="In addition to the client and the server, we also need to say hello to:
+•	Your Internet connection: Allows you to send and receive data on the Web. It's basically like the street between your house and the shop.
+•	TCP/IP: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the Web. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).
+•	DNS: Domain Name System Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS before retrieving the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.
+•	HTTP: Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.
+•	Component files: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
+o	Code files: Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.
+o	Assets: This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.
+"/>
+    </LinearLayout>
+</ScrollView>

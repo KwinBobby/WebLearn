@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C3">
-
-</android.support.constraint.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is VERY grumpy, we could wrap the word &#10;very&#10; in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:
+&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
+You do however need to make sure that your elements are properly nested: in the example above we opened the &lt;p&gt; element first, then the &lt;strong&gt; element, therefore we have to close the &lt;strong&gt; element first, then the &lt;p&gt;. The following is incorrect:
+&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;
+The elements have to open and close correctly so they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, and you may well get unexpected results. So don't do it!
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Empty elements"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Some elements have no content, and are called empty elements. Take the &lt;img&gt; element we already have in our HTML:
+&lt;imgsrc=&#10;images/firefox-icon.png&#10; alt=&#10;My test image&#10;&gt;
+        This contains two attributes, but there is no closing &lt;/img&gt; tag, and no inner content. This is because an image element doesn't wrap content to have an effect on it. Its purpose is to embed an image in the HTML page, in the place it appears.
+    "/>
+    </LinearLayout>
+</ScrollView>

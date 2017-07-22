@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C4">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Now that we've explored some CSS basics, let's start adding some more rules and information to our style.css file to make our example look nice. First up, let's get our fonts and text looking a little better.
+1.	First of all, go back and find the output from Google Fonts that you stored somewhere safe. Add the &lt;link ... &gt; element somewhere inside your index.html's head (again, anywhere between the &lt;head&gt; and &lt;/head&gt; tags). It'll look something like this:
+&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'&gt;
+••  Next, delete the existing rule you have in your style.css file. It was a good test, but red text doesn't actually look very good.
+•  Add the following lines in its place, replacing the placeholder line with the actual font-family line you got from Google Fonts. (font-family just means the font(s) you want to use for your text.) This rule first sets a global base font and font size for the whole page (since &lt;html&gt; is the parent element of the whole page, and all elements inside it inherit the same font-size and font-family):
+html {
+font-size:10px;/* px means 'pixels': the base font size is now 10 pixels high  */
+font-family:placeholder: this should be the rest of the output you got from Google fonts
+}
+•Note: I've added in a comment to explain what &#10;px&#10; means. Anything in a CSS document between /* and */ is a CSS comment, which the browser ignores when it renders the code. This is a place for you to write helpful notes on what you are doing.
+•  Now we'll set font sizes for text-containing elements inside the HTML body (&lt;hi&gt;, &lt;li&gt; and&lt;p&gt;). We'll also center the text of our heading and set some line height and letter spacing on the body content to make it a bit more readable:
+h1 {
+font-size:60px;
+text-align:center;
+}
 
-</android.support.constraint.ConstraintLayout>
+p, li {
+font-size:16px;
+line-height:2;
+letter-spacing:1px;
+}
+4.
+You can adjust these px values to whatever you like to get your design looking how you want, but in general your design should look like this:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/c4_4p"/>
+    </LinearLayout>
+</ScrollView>

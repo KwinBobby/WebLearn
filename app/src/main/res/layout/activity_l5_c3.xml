@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson5.L5C3">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Some tools let you publish your website online:
+•		GitHub is a &#10;social coding&#10; site. It allows you to upload code repositories for storage in the Gitversion control system. You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called GitHub Pages, which allows you to expose website code live on the Web.
+•	Google App Engine is a powerful platform that lets you build and run applications on Google’s infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website.
+•	Dropbox is a file storage system that allows you to save your files on the Web and have them available from any computer. Anybody with an Internet connection can access any Dropbox folder that you make publicly accessible. If that folder contains website files, it will be served as a website automatically.
+Unlike most hosting, such tools are usually free to use, but you only get a limited feature-set.
+"/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

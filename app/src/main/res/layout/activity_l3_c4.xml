@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson3.L3C4">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Now we've gone over a few JavaScript basics, let's add a few cool features to our example site to see what is possible."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Adding an image changer"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="In this section, we'll add an additional image to our site using some more DOM API features, using some JavaScript to switch between the two when the image is clicked.
+1.	First of all, find another image you'd like to feature on your site. Be sure it is the same size as the first image, or as close as possible.
+2.	Save this image in your images folder.
+3.	Rename this image 'firefox2.png' (without quotes).
+4.	Go to your main.js file, and enter the following JavaScript. (If your
+&#10;hello world
+&#10; JavaScript is still there, delete it.)
+5.	varmyImage=document.querySelector('img');
+6.
+7.	myImage.onclick=function(){
+8.	varmySrc=myImage.getAttribute('src');
+9.	if(mySrc==='images/firefox-icon.png'){
+10.	myImage.setAttribute('src','images/firefox2.png');
+11.	}else{
+12.	myImage.setAttribute('src','images/firefox-icon.png');
+13.	}
+}
+4.
+5.	Save all files and load index.html in the browser. Now when you click the image, it should change to the other one!
+You store a reference to your image element in the myImage variable. Next, you make this variable's onclick event handler property equal to a function with no name (an &#10;anonymous &#10; function). Now, every time this image element is clicked:
+1.	You retrieve the value of the image's src attribute.
+2.	You use a conditional to check whether the src value is equal to the path to the original image:
+1.	If it is, you change the src value to the path to the 2nd image, forcing the other image to be loaded inside the &lt;image&gt; element.
+2.	If it isn't (meaning it must already have changed), the src value swaps back to the original image path, to the original state.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Adding a personalized welcome message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Next we will add another bit of code, changing the page's title to a personalized welcome message when the user first navigates to the site. This welcome message will persist, should the user leave the site and later return — we will save it using theWeb Storage API. We will also include an option to change the user and, therefore, the welcome message anytime it is required.
+1.	In index.html, add the following line just before the &lt;script&gt; element:
+&lt;button&gt;Change user&lt;/button&gt;
+••  In main.js, place the following code at the bottom of the file, exactly as written — this takes references to the new button and the heading, storing them inside variables:
+varmyButton=document.querySelector('button');
+varmyHeading=document.querySelector('h1');
+••  Now add the following function to set the personalized greeting — this won't do anything yet, but we'll fix this in a moment:
+functionsetUserName(){
+varmyName=prompt('Please enter your name.');
+localStorage.setItem('name',myName);
+myHeading.textContent='Mozilla is cool, '+myName;
+}
+•  This function contains a promt () function, which brings up a dialog box, a bit like alert(). This prompt(), however, asks the user to enter some data, storing it in a variable after the user presses OK. In this case, we are asking the user to enter their name. Next, we call on an API called localStorage, which allows us to store data in the browser and later retrieve it. We use localStorage'ssetItem() function to create and store a data item called 'name', setting its value to the myName variable which contains the data the user entered. Finally, we set the textContent of the heading to a string, plus the user's newly stored name.
+•  Next, add this if ... else block — we could call this the initialization code, as it structures the app when it first loads:
+if(!localStorage.getItem('name')){
+setUserName();
+}else{
+varstoredName=localStorage.getItem('name');
+myHeading.textContent='Mozilla is cool, '+storedName;
+}
+•  This block first uses the negation operator (logical NOT, represented by the !) to check whether the name data exists. If not, the setUserName() function is run to create it. If it exists (that is, the user set it during a previous visit), we retrieve the stored name using getItem() and set the textContent of the heading to a string, plus the user's name, as we did inside setUserName().
+•  Finally, put the below onclick event handler on the button. When clicked, the setUserName() function is run. This allows the user to set a new name, when they wish, by pressing the button:
+myButton.onclick=function(){
+setUserName();
+}
+5.
+Now when you first visit the site, it will ask you for your username, then give you a personalized message. You can change the name any time you like by pressing the button. As an added bonus, because the name is stored inside localStorage, it persists after the site is closed down, keeping the personalized message there when you next open the site!
+"/>
+    </LinearLayout>
+</ScrollView>

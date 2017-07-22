@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C5">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="One thing you'll notice about writing CSS is that a lot of it is about boxes — setting their size, colour, position, etc. Most of the HTML elements on your page can be thought of as boxes sitting on top of each other."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/c4_5_1p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Not surprisingly, CSS layout is based principally on the box model. Each of the blocks taking up space on your page has properties like this:
+•	padding, the space just around the content (e.g., around paragraph text)
+•	border, the solid line that sits just outside the padding
+•	margin, the space around the outside of the element
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/c2_8p"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="In this section we also use:
+•	width (of an element)
+•	background-colour, the colour behind an element's content and padding
+•	colour, the colour of an element's content (usually text)
+•	text-shadow: sets a drop shadow on the text inside an element
+•	display: sets the display mode of an element (don't worry about this yet)
+So, let's get started and add some more CSS to our page! Keep adding these new rules to the bottom of the page, and don't be afraid to experiment with changing values to see how it turns out.
+"/>
+
+    </LinearLayout>
+</ScrollView>

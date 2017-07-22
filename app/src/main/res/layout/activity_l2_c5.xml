@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C5">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Let's turn our attention to the image element again:
+&lt;imgsrc=&#10;images/firefox-icon.png&#10; alt=&#10;My test image&#10;&gt;
+        As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.
+        We have also included an alt (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because:
+        1.	They are visually impaired. Users with significant visual impairments often use tools called Screen Readers to read out the alt text to them.
+        2.	Something has gone wrong causing the image to not display. For example, try deliberately changing the path inside your src attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:
 
-</android.support.constraint.ConstraintLayout>
+        The key words about alt text are &#10;descriptive text&#10;. The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of &#10;My test image&#10; is no good at all. A much better alternative for our Firefox logo would be &#10;The Firefox logo: a flaming fox surrounding the Earth.&#10;
+        Try coming up with some better alt text for your image now.
+        "/>
+
+    </LinearLayout>
+</ScrollView>
+

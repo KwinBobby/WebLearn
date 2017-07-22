@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson1.L1C5">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="To make files talk to one another, you have to provide a file path between them — basically a route so one file knows where another one is. To demonstrate this, we will insert a little bit of HTML into our index.html file, and make it display the image you chose in the content above “What will the website look like?”
+1.	Copy the image you chose earlier into your images folder.
+2.	Open up your index.html file, and insert the following code into the file exactly as shown. Don't worry about what it all means for now — we'll look at the structures in more detail later in the series.
+3.	&lt;!DOCTYPE html&gt;
+4.	&lt;html&gt;
+5.	&lt;head&gt;
+6.	&lt;meta charset=&#34;utf-8&#34;&gt;
+7.	&lt;title&gt;My test page&lt;/title&gt;
+8.	&lt;/head&gt;
+9.	&lt;body&gt;
+10.	&lt;imgsrc=&#34; &#34; alt=&#34;My test image&#34;&gt;
+        11.	&lt;/body&gt;
+&lt;/html&gt;
+    2.
+    3.	The line &lt;imgsrc=&#34;&#34; alt=&#34;My test image&#34;&gt; is the HTML code that inserts an image into the page. We need to tell the HTML where the image is. The image is inside the images directory, which is in the same directory as index.html. To walk down the file structure from index.html to our image, the file path we'd need is images/your-image-filename. For example, our image is called firefox-icon.png, so the file path is images/firefox-icon.png.
+    4.	Insert the file path into your HTML code between the double quote marks of the src=&#34;&#34; code.
+    5.	Save your HTML file, then load it in your web browser (double-click the file). You should see your new webpage displaying your image!
+    "/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/c1_5p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Some general rules for file paths:
+•	To link to a target file in the same directory as the invoking HTML file, just use the filename, e.g. my-image.jpg.
+•	To reference a file in a subdirectory, write the directory name in front of the path, plus a forward slash, e.g. subdirectory/my-image.jpg.
+•	To link to a target file in the directory above the invoking HTML file, write two dots. So for example, if index.html was inside a subfolder of test-site and my-image.png was inside test-site, you could reference my-image.png from index.htmlusing ../my-image.png.
+•	You can combine these as much as you like, for example ../subdirectory/another-subdirectory/my-image.png.
+For now, this is about all you need to know.
+Note: The Windows file system tends to use backslashes, not forward slashes, e.g. C:\windows. This doesn't matter — even if you are developing your web site on Windows, you should still use forward slashes in your code.
+"/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

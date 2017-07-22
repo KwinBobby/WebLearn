@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson3.L3C2">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="However, JavaScript is a little more complex to become comfortable with than HTML and CSS. You may have to start small, and keep working in small consistent steps. To start, we'll show how to add some basic JavaScript to your page, creating a &#10;hello world!&#10;
+        •   First, go to your test site and create a new folder named 'scripts' (without the quotes). Then, within the new scripts folder you just created, create a new file called main.js. Save it in your scripts folder.
+        •   Next, in your index.html file enter the following element on a new line just before the closing &lt;/body&gt; tag:
+    &lt;scriptsrc=&#10;scripts/main.js&#10;&gt;&lt;/script&gt;
+    ••   This is basically doing the same job as the &lt;link&gt; element for CSS — it applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
+•   Now add the following code to the main.js file:
+varmyHeading=document.querySelector('h1');
+myHeading.textContent='Hello world!';
+1.
+2.	Finally, make sure the HTML and JavaScript files are saved, and load index.html in the browser. You should see something like the following:"/>
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/c3_2p"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Note: The reason we've put the &lt;script&gt; element near the bottom of the HTML file is that HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="What happened?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Your heading text has now been changed to &#10;Hello world!&#10; using JavaScript. You did this by first using a function called query Selector () to grab a reference to your heading, and store it in a variable called my Heading. This is very similar to what we did using CSS selectors. When wanting to do something to an element, you first need to select it.
+        After that, you set the value of the my Heading variable's text Content property (which represents the content of the heading) to &#10;Hello world!&#10;.
+        Note: Both of the features you used above are parts of the Document Object Model (DOM) API, which allows you to manipulate documents.
+        "/>
+
+    </LinearLayout>
+</ScrollView>

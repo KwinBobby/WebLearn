@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C4">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our index.html example (which we first met in the Dealing with files article):
+&gt;!DOCTYPE html&gt;
+&gt;html&gt;
+&gt;head&gt;
+&gt;meta charset=&#10;utf-8&#10;&gt;
+&gt;title&gt;My test page&gt;/title&gt;
+&gt;/head&gt;
+&gt;body&gt;
+&gt;imgsrc=&#10;images/firefox-icon.png&#10; alt=&#10;My test image&#10;&gt;
+    &gt;/body&gt;
+&gt;/html&gt;
+    Here we have:
+    •	&gt;!DOCTYPE html&gt; — the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no-one really cares about them, and they are really just a historical artifact that needs to be included for everything to work right. For now, that's all you need to know.
+    •	&gt;html&gt;&gt;/html&gt; — the &gt;html&gt; element. This element wraps all the content on the entire page, and is sometimes known as the root element.
+•	&gt;head&gt;&gt;/head&gt; — the &gt;head&gt; element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.
+    •	&gt;body&gt;&gt;/body&gt; — the &gt;body&gt; element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+        •	&gt;meta charset=&#10;utf-8&#10;&gt; — this element sets the character set your document should use to utf-8, which includes most characters from all known human languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
+            •	&gt;title&gt;&gt;/title&gt; — this sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favourite it.
+            "/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson5.L5C4">
-
-</android.support.constraint.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="There are a number of web apps that emulate a website development environment, allowing you to enter HTML, CSS and JavaScript and then display the result of that code when rendered as a website — all in one browser tab. Generally speaking these tools are quite easy, great for learning, and free (for basic features), and they host your rendered page at a unique web address. However, the basic features are pretty limited, and the apps usually don't provide hosting space for assets (like images).
+Try playing with some of these examples, and see which one you like the best:
+•	JSFiddle
+•	Thimble
+•	JS Bin
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c5_4p"/>
+    </LinearLayout>
+</ScrollView>

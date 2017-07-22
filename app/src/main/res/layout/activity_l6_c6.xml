@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson6.L6C6">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Earlier we used the term &#34;packets&#34; to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the Web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If web sites were sent as single big chunks, only one user could download one at a time, which obviously would make the Web very inefficient and not much fun to use."/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C1">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Hypertext Mark-up Language (HTML) is the code that you use to structure your web content, and give it meaning and purpose. For example, is my content a set of paragraphs, or a list of bullet points? Do I have images inserted in my page? Do I have a data table? Without overwhelming you, HTML basics provide enough information to make you familiar with HTML."/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="So what is HTML, really?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="HTML is not a programming language; it is a mark-up language, and is used to tell your browser how to display the webpages you visit. It can be as complicated or as simple as the web designer wishes it to be. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or an image a hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:
+My cat is very grumpy
+If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph tag (&lt;p&gt;) element:
+&lt;p&gt; My cat is very grumpy&lt;/p&gt;
+"/>
+    </LinearLayout>
+</ScrollView>

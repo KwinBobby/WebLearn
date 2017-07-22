@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.beta.android.aakashresearchlabs.test">
+    package="org.beta.android.aakashresearchlabs.test">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/ChapterTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,180 +18,86 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:label="WebLearn"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".lessonActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessonActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/itemMenu" />
         <activity
-            android:name=".TestActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestBasicActivity"
-            android:label="Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestGitBasicActivity"
-            android:label="Git Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestFrontEndActivity"
-            android:label="Front End"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestBackEndActivity"
-            android:label="Back End"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestFrameworkActivity"
-            android:label="Framework"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestLessons.TestImportantActivity"
-            android:label="Important"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Basic.l1B"
-            android:label="Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Basic.l2B"
-            android:label="Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.GitBasic.l1GB"
-            android:label="Git Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.GitBasic.l2GB"
-            android:label="Git Basic"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.FrontEnd.l1FE"
-            android:label="Front End"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.FrontEnd.l2FE"
-            android:label="Front End"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.BackEnd.l1BE"
-            android:label="BackEnd"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.BackEnd.l2BE"
-            android:label="BackEnd"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Framework.l1F"
-            android:label="Framework"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Framework.l2F"
-            android:label="Framework"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Important.l1I"
-            android:label="Important"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".TestSeries.Important.l2I"
-            android:label="Important"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/itemMenu" />
-        <activity
-            android:name=".lessons.LessonOneActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonOneActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonTwoActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonTwoActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonThreeActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonThreeActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonFourActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonFourActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonFiveActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonFiveActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonSixActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonSixActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
         <activity
-            android:name=".lessons.LessonSevenActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="org.beta.android.aakashresearchlabs.test.lessons.LessonSevenActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme" />
-        <activity android:name=".Lesson1.L1C1" />
-        <activity android:name=".Lesson2.L2C1" />
-        <activity android:name=".Lesson3.L3C1" />
-        <activity android:name=".Lesson4.L4C1" />
-        <activity android:name=".Lesson5.L5C1" />
-        <activity android:name=".Lesson6.L6C1" />
-        <activity android:name=".Lesson7.L7C1" />
-        <activity android:name=".Lesson1.L1C2" />
-        <activity android:name=".Lesson1.L1C3" />
-        <activity android:name=".Lesson1.L1C4" />
-        <activity android:name=".Lesson1.L1C5" />
-        <activity android:name=".Lesson1.L1C6" />
-        <activity android:name=".Lesson2.L2C2" />
-        <activity android:name=".Lesson2.L2C3" />
-        <activity android:name=".Lesson2.L2C4" />
-        <activity android:name=".Lesson2.L2C6" />
-        <activity android:name=".Lesson2.L2C7" />
-        <activity android:name=".Lesson2.L2C8" />
-        <activity android:name=".Lesson3.L3C2" />
-        <activity android:name=".Lesson3.L3C3" />
-        <activity android:name=".Lesson3.L3C4" />
-        <activity android:name=".Lesson3.L3C5" />
-        <activity android:name=".Lesson2.L2C5" />
-        <activity android:name=".Lesson4.L4C2" />
-        <activity android:name=".Lesson4.L4C3" />
-        <activity android:name=".Lesson4.L4C4" />
-        <activity android:name=".Lesson4.L4C5" />
-        <activity android:name=".Lesson4.L4C6" />
-        <activity android:name=".Lesson4.L4C7" />
-        <activity android:name=".Lesson5.L5C2" />
-        <activity android:name=".Lesson5.L5C3" />
-        <activity android:name=".Lesson5.L5C4" />
-        <activity android:name=".Lesson5.L5C5" />
-        <activity android:name=".Lesson6.L6C2" />
-        <activity android:name=".Lesson6.L6C3" />
-        <activity android:name=".Lesson6.L6C4" />
-        <activity android:name=".Lesson6.L6C5" />
-        <activity android:name=".Lesson6.L6C6" />
-        <activity android:name=".Lesson7.L7C2" />
-        <activity android:name=".Lesson7.L7C3" />
-        <activity android:name=".Lesson7.L7C4" />
-        <activity android:name=".Lesson7.L7C5" />
-        <activity android:name=".Lesson7.L7C6" />
-        <activity android:name=".CommonTestActivity"
-            android:parentActivityName=".MainActivity"
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson3.L3C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson5.L5C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C1" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson1.L1C6" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C6" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C7" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C8" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson3.L3C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson3.L3C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson3.L3C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson3.L3C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson2.L2C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C6" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson4.L4C7" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson5.L5C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson5.L5C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson5.L5C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson5.L5C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson6.L6C6" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C2" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C3" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C4" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C5" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.Lesson7.L7C6" />
+        <activity android:name="org.beta.android.aakashresearchlabs.test.CommonTestActivity"
+            android:parentActivityName="org.beta.android.aakashresearchlabs.test.MainActivity"
             android:theme="@style/ChapterTheme"></activity>
     </application>
 

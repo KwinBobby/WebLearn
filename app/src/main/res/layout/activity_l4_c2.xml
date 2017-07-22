@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C2">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Let's look at the above CSS in a bit more detail:"/>
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c4_2p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="The whole structure is called a rule set (but often &#10;rule&#10; for short). Note also the names of the individual parts:
+Selector
+The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, p elements). To style a different element, just change the selector.
+Declaration
+A single rule like colour: red; specifying which of the element's properties you want to style.
+Properties
+Ways in which you can style a given HTML element. (In this case, colour is a property of the p elements.) In CSS, you choose which properties you want to affect in your rule.
+Property value
+To the right of the property, after the colon, we have the property value, to choose one out of many possible appearances for a given property (there are many colour values besides red).
+Note the other important parts of the syntax:
+•	Each rule set (apart from the selector) must be wrapped in curly braces ({}).
+•	Within each declaration, you must use a colon (:) to separate the property from its values.
+•	Within each rule set, you must use a semicolon (;) to separate each declaration from the next one.
+So to modify multiple property values at once, you just need to write them separated by semicolons, like this:
+p {
+colour: red;
+width:500px;
+border:1px solid black;
+}
+"/>
+    </LinearLayout>
+</ScrollView>

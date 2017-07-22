@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C3">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:text="You can also select multiple types of elements and apply a single rule set to all of them. Include multiple selectors separated by commas. For example:-->
+<!--p,li,h1 {-->
+<!--colour: red;-->
+<!--}-->
+<!--"/>-->
 
-</android.support.constraint.ConstraintLayout>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="34sp"-->
+            <!--android:paddingBottom="20dp"-->
+            <!--android:text="Different types of selector"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:text="There are many different types of selector. Above, we only looked at element selectors, which select all elements of a given type in the given HTML documents. But we can make more specific selections than that. Here are some of the more common types of selector:"/>-->
+       <!---->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selector name"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="What does it select"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Example"/>
+
+                </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Element selector (sometimes called a tag or type selector)"
+                    android:layout_weight="1"/>
+                  <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All HTML element(s) of the specified type."/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="p
+Selects &lt;p&gt;
+"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID selector"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="The element on the page with the specified ID (on a given HTML page, you're only allowed one element per ID)."/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="#my-id
+Selects &lt;p id=&#10;my-id&#10;&gt; or &lt;a id=&#10;my-id&#10;&gt;
+"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Class selector"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All HTML element(s) of the specified type."/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=".my-class
+Selects &lt;p class=&#10;my-class&#10;&gt; and &lt;a class=&#10;my-class&#10;&gt;
+"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Attribute selector"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All HTML element(s) of the specified type."/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="img[src]
+Selects &lt;imgsrc=&#10;myimage.png&#10;&gt; but not &lt;img&gt;
+"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pseudo class selector"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All HTML element(s) of the specified type."/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="a:hover
+Selects &lt;a&gt;, but only when the mouse pointer is hovering over the link.
+"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

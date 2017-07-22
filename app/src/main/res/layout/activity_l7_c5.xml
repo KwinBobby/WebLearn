@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson7.L7C5">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="You should really learn the basics of the core HTML, CSS, and JavaScript languages first before attempting to use the tools detailed here. For example, you'll need to know the fundamentals of these languages before you start debugging problems in complex web code, or making effective use of JavaScript libraries, or writing tests and running them against your code using test runners, etc.
+&#10;You need a solid foundation first.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Modules"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Real world web development tools (TBD)&#10;
+In this module, we explore the different kinds of web development tools available. This includes reviewing the most common kinds of tasks you may be called on to solve, how they can fit together in a workflow, and the best tools currently avaiable for carrying out those tasks.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Cross browser testing"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="This module looks specifically at the area of testing web projects across different browsers. Here we look identifying your target audience (e.g. what users, browsers and devices do you most need to worry about?), how to go about doing testing, the main issues that you'll face with different types of code and how to fix/mitigate those, what tools are most useful in helping you test and fix problems, and how to use automation to speed up testing."/>
+    </LinearLayout>
+</ScrollView>

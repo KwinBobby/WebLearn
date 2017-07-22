@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson1.L1C2">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="•	A computer. Maybe that sounds obvious to some people, but some of you are reading this article from your phone or a library computer. For serious web development, it's better to invest in a desktop or laptop computer (Windows, Mac, or Linux).
+•	A text editor, to write code in. This could be a text editor (e.g. brackets, Atom or Visual Studio Code), or a hybrid editor (e.g. Dreamweaver). Office document editors are not suitable for this use, as they rely on hidden elements that interfere with the rendering engines used by web browsers.
+•	Web browsers, to test code in. Currently the most-used browsers are Firefox, Chrome, Opera, Safari, Internet Explorer and Microsoft Edge. You should also test how your site performs on mobile devices and on any old browsers your target audience may still be using extensively (such as IE 6–8.)
+•	A graphics editor, like GIMP, Paint.NET, or Photoshop, to make images for your WebPages.
+•	A version control system, to manage files on servers, collaborates on a project with a team, share code and assets, and avoids editing conflicts. Right now Git is the most popular version control tool, and the GitHub code hosting service, based on Git, is also very popular.
+•	A FTP program, used on older webhosting accounts to manage files on servers (Git is increasingly replacing FTP for this purpose). There are loads of (S) FTP programs available including Cyberduck, Fetch, and FileZilla.
+•	An automation system, like Grunt or Gulp, to perform repetitive tasks automatically, for example minifying code and running tests.
+•	Templates, libraries, frameworks, etc., to speed up writing common functionality.
+•	More tools besides!
+"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="What tools do I actually need, right now?
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="That looks like a scary list, but fortunately you can get started in web development without knowing anything about most of these. In this article we'll just set you up with a bare minimum — a text editor and some modern web browsers."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingBottom="20dp"
+            android:text="Installing a text editor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="You probably already have a basic text editor on your computer. By default Windows includes Notepad and OS X comes with TextEdit. Linux distros vary; Ubuntu comes with gedit by default.
+For Web development, you can probably do better than Notepad or TextEdit. We recommend starting out with Brackets, which is a free editor that offers live previews and code hints.
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingBottom="20dp"
+            android:text="Installing modern web browsers"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="For now, we'll just install a couple of desktop web browsers to test our code in. Choose your operating system below and click the relevant links to download installers for your favourite browsers:
+•	Linux: Firefox, Chrome, Opera.
+•	Windows: Firefox, Chrome, Opera, Internet Explorer, Microsoft Edge (Edge comes with Windows 10 by default; If you have Windows 8 or above, you can install IE 10 or later; otherwise, you should install an alternative browser)
+•	Mac: Firefox, Chrome, Opera, Safari (Safari comes with iOS and OS X by default)
+Before going on, you should install at least two of these browsers and have them ready for testing.
+"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingBottom="20dp"
+            android:text="Installing a local web server"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Some examples will need to be run through a web server to work successfully. "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Set up a testing server"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="1.	Select Site > Manage Sites.
+2.	Click New to set up a new site, or select an existing Dreamweaver site and click the edit icon.
+3.	In the Site Setup dialog box, select the Servers category and do one of the following:
+•	Click the Add New Server button to add a new server
+•	Select an existing server and click the Edit Existing Server button
+	Specify Basic options just like you would for a remote server connection, and then click the Advanced button. While setting up the basic options, make sure you specify a Web URL in the Basic screen.
+	Under Testing Server, select the server model you want to use for your web application.
+	Click Save to close the Advanced screen. Then in the Servers category, specify the server you just added or edited as a testing server.
+"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,9 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson7.L7C6">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="The Dynamic Websites – Server-side programming topic is a series of modules that show how to create dynamic websites; websites that deliver customised information in response to HTTP requests. The modules provide a generic introduction to server-side programming, along with specific beginner-level guides on how to use the Django (Python) and Express (Node.js/JavaScript) web frameworks to create basic applications.
+Most major websites use some kind of server-side technology to dynamically display different data as required. For example, imagine how many products are available on Amazon, and imagine how many posts have been written on Facebook? Displaying all of these using completely different static pages would be completely inefficient, so instead such sites display static templates (built using HTML, CSS, and JavaScript), and then dynamically update the data displayed inside those templates when needed, e.g. when you want to view a different product on Amazon.
+In the modern world of web development, learning about server-side development is highly recommended.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Learning pathway"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Getting started with server-side programming is usually easier than with client-side development, because dynamic websites tend to perform a lot of very similar operations (retrieving data from a database and displaying it in a page, validating user-entered data and saving it in a database, checking user permissions and logging users in, etc.), and are constructed using web frameworks that make these and other common web server operations easy.
+A basic knowledge of programming concepts (or of a particular programming language) is useful, but not essential. Similarly, expertise in client-side coding is not required, but a basic knowledge will help you work better with the developers creating your client-side web &#10;front end&#10;.
+You will need to understand &#10;how the web works&#10;. We recommend that you first read the following topics:
+•	What is a web server
+&#10;Web server&#10; can refer to hardware or software, or both of them working together.
+1.	On the hardware side, a web server is a computer that stores a website's component files (e.g. HTML documents, images, CSS stylesheets, and JavaScript files) and delivers them to the end-user's device. It is connected to the Internet and can be accessed through a domain name like mozilla.org.
+2.	On the software side, a web server includes several parts that control how web users access hosted files, at minimum an HTTP server. An HTTP server is a piece of software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages).
+At the most basic level, whenever a browser needs a file hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct web server (hardware), the HTTP server (software) sends the requested document back, also through HTTP.
+To publish a website, you need either a static or a dynamic web server.
+A static web server, or stack, consists of a computer (hardware) with an HTTP server (software). We call it &#10;static&#10; because the server sends its hosted files &#10;as-is&#10; to your browser.
+A dynamic web server consists of a static web server plus extra software, most commonly an application server and a database. We call it &#10;dynamic&#10; because the application server updates the hosted files before sending them to your browser via the HTTP server.
+What software do I need to build a website?
+You can download for free most of the programs you need for web development. We'll provide a few links in this article. You'll need tools to 1) create and edit webpages, 2) upload files to your web server, and 3) view your website.
+Nearly all operating systems by default include a text editor and website viewer (called a browser). So usually you only need to acquire software for transferring files to your web server.
+•
+•	How do you upload files to a web server?
+Open FireFTP in a new tab. Two ways to do so in Firefox:
+1.	Firefox menu   ➤ Developer Settings ➤ FireFTP
+2.	Tools ➤ Web Developer ➤ FireFTP
+Now you should see something like this:
 
-</android.support.constraint.ConstraintLayout>
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c7_6_1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Logging in
+For this example, we'll suppose that our hosting provider (the service that will host our HTTP web server) is a fictitious company &#10;Example Hosting Provider&#10; whose URLs look like this: mypersonalwebsite.examplehostingprovider.net.
+We have just opened an account and received this info from them:
+Congratulations for opening an account at Example Hosting Provider.
+Your account is: demozilla
+Your website will be visible at demozilla.examplehostingprovider.net
+To publish to this account, please connect through FTP with the following credentials:
+•	FTP server: ftp://demozilla.examplehostingprovider.net
+•	User: demozilla
+•	Password: quickbrownfox
+•	To publish on the web, put your files into the Public/htdocs directory.
+Let's first look at http://demozilla.examplehostingprovider.net/ — as you can see, so far there is nothing there:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c7_6_2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Note: Depending on your hosting provider, most of the time you'll see a page saying something like “This website is hosted by [Hosting Service].”
+To connect your FTP client to the distant server, press the &#10;Create an account...&#10; button and fill in the fields with the information furnished by the hosting provider:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/c7_6_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Here and there: local and remote view
+Let's now connect with this newly-created account:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c7_6_4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Let's examine what you're seeing:
+•	On the left, you see your local files. Navigate into the directory where you store your website (in this case, mdn).
+•	On the right, you see remote files. We are logged into our distant FTP root (in this case, users/demozilla)
+•	You can ignore the bottom zone for now. It's a live log of every interaction between your FTP client and the server.
+Uploading to the server
+As you remember, our hosting provider told us that our files have to be stored in the Public/htdocs directory, so navigate there in your right pane:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c7_6_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Now, to upload your files to the server, drag-and-drop them from the left pane to the right pane:"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/c7_6_6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Are they really online?
+So far, so good, but double-check by going to http://demozilla.examplehostingprovider.net/ in your browser:
+"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/c7_6_7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="And voilà! Our website is live!
+With that basic understanding you'll be ready to work your way through the modules in this section.
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Modules"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="This topic contains the following modules. You should start with the first module, then go on to one of the following modules, which show how to work with two very popular server-side languages using appropriate web frameworks . "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Server-side website programming first steps"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="This module provides server-technology-agnostic information about server-side website programming, including answers to fundamental questions about server-side programming — &#10;what it is&#10;, &#10;how it differs from client-side programming&#10;, and &#10;why it is so useful&#10; — and an overview of some of the more popular server-side web frameworks and guidance on how to select the most suitable for your site. Lastly we provide an introductory section on web server security."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Django Web Framework (Python)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Django is an extremely popular and fully featured server-side web framework, written in Python. The module explains why Django is such a good web server framework, how to set up a development environment and how to perform common tasks with it."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Express Web Framework (Node.js/JavaScript)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Express is a popular web framework, written in JavaScript and hosted within the node.js runtime environment. The module explains some of the key benefits of this framework, how to set up your development environment and how to perform common web development and deployment tasks."/>
+    </LinearLayout>
+</ScrollView>

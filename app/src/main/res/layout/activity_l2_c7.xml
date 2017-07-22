@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C7">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Links are very important — they are what make the Web A WEB. To add a link, we need to use a simple element —&lt;a&gt; — the a being short for &#10;anchor&#10;. To make text within your paragraph into a link, follow these steps:
+1.	Choose some text. We chose the text &#10;Mozilla Manifesto&#10;.
+2.	Wrap the text in an &lt;a&gt; element, like so:
+&lt;a&gt;Mozilla Manifesto&lt;/a&gt;
+•• Give the &lt;a&gt; element an  href attribute, like so:
+&lt;a href=&#10;&#10;&gt;Mozilla Manifesto&lt;/a&gt;
+    •• Fill in the value of this attribute with the web address that you want the link to link to:
+    &lt;a href=&#10;&#10;https://www.mozilla.org/en-US/about/manifesto/&#10;&gt;Mozilla Manifesto&lt;/a&gt;
+    4.
+    You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.
+    href might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for hypertext reference.
+    Add a link to your page now, if you haven't already done so.
+    "/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C6">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="html {
+background-colour:#00539F;
+}
+This rule sets a background colour for the whole page. Change the colour code above to whatever colour you chose when planning your site.
+"/>
 
-</android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Sorting the body out"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="body {
+width:600px;
+margin:0 auto;
+background-colour:#FF9500;
+padding:020px 20px20px;
+border:5px solid black;
+}
+Now for the body element. There are quite a few declarations here, so let's go through them all one by one:
+•	width: 600px; — this forces the body to always be 600 pixels wide.
+•	margin: 0 auto; — When you set two values on a property like margin or padding, the first value affects the element's top and bottom side (make it 0 in this case), and the second value the left and right side (here, auto is a special value that divides the available horizontal space evenly between left and right). You can also use one, three, or four values, as documented below
+    &lt;length&gt; : Specifies a fixed width. Negative Values are allowed. See for &lt;length&gt; possible units.
+   &lt;percentage&gt; : A &lt;percentage&gt; relative to the width of the containing block. Negative values are allowed.
+    Auto : auto is replaced by some suitable value, e.g. it can be used for centering of blocks.
+    div { width:50%;  margin:0 auto; } centers the div container horizontally.
+
+•	background-colour: #FF9500; — as before, this sets the element's background colour. I used a sort of reddish orange for the body as opposed to dark blue for the html element. Go ahead and experiment. Feel free to use white or whatever you like.
+•	padding: 0 20px 20px20px; — we have four values set on the padding, to make a bit of space around our content. This time we are setting no padding on the top of the body, and 20 pixels on the left, bottom and right. The values set top, right, bottom, left, in that order.
+•	border: 5px solid black; — this simply sets a 5 pixel wide solid black border on all sides of the body.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Positioning and styling our main page title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="h1 {
+margin:0;
+padding:20px 0;
+colour:#00539F;
+text-shadow:3px 3px1px black;
+}
+You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply some default styling to the &lt;h1&gt; element (among others), even when you haven't applied any CSS at all! That might sound like a bad idea, but we want even an unstyled webpage to have basic readability. To get rid of the gap we overrode the default styling by setting margin: 0;.
+Next up, we've set the heading's top and bottom padding to 20 pixels, and made the heading text the same colour as the html background colour.
+One rather interesting property we've used here is text-shadow, which applies a text shadow to the text content of the element. Its four values are as follows:
+•	The first pixel value sets the horizontal offset of the shadow from the text — how far it moves across: a negative value should move it to the left.
+•	The second pixel value sets the vertical offset of the shadow from the text — how far it moves down, in this example; a negative value should move it up.
+•	The third pixel value sets the blur radius of the shadow — a bigger value will mean a more blurry shadow.
+•	The fourth value sets the base colour of the shadow.
+Again, try experimenting with different values to see what you can come up with.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Centering the image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="img {
+display: block;
+margin:0 auto;
+}
+Finally, we'll center the image to make it look better. We could use the margin: 0 auto trick again as we did earlier for the body, but we also need to do something else. The body element is block level, meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are inline elements, meaning they can't. So to apply margins to the image, we have to give the image block-level behavior using display: block;.
+Note: Don't worry if you don't yet understand display: block; and the block-level/inline distinction. You will as you study CSS in more depth.
+"/>
+    </LinearLayout>
+</ScrollView>

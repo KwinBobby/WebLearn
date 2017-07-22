@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson4.L4C1">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Cascading Stylesheets (CSS) is the code that you use to style your website. For example, do you want text to be black or red? Where should content be drawn on the screen? What background images and colours should be used to decorate your website? CSS basics takes you through what you need to get started."/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="So what is CSS, really?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Like HTML, CSS is not really a programming language. It is not a markup language either — It is a style sheet language, that is, it lets you apply styles selectively to elements in HTML documents. For example, to select all the paragraph elements on an HTML page and turn the text within them red, you'd write this CSS:
+p {
+colour: red;
+}
+Let's try it out: paste those three lines of CSS into a new file in your text editor, and then save the file as style.css in your styles directory.
+But we still need to apply the CSS to your HTML document, otherwise the CSS styling won't affect how your browser displays the HTML document.
+1.	Open your index.html file and paste the following line somewhere in the head, that is, between the &lt;head&gt; and &lt;/head&gt; tags:
+&lt;link href=&#10;styles/style.css&#10; rel=&#10;stylesheet&#10; type=&#10;text/css&#10;&gt;
+        1.
+        2.	Save index.html and load it in your browser. You should see something like this:
+        "/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/c4_1p"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="If your paragraph text is now red, congratulations, you've now written your first successful CSS!"/>
+
+    </LinearLayout>
+</ScrollView>

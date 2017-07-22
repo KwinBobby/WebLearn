@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson2.L2C6">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="This section will cover some of the basic HTML elements you'll use for marking up text."/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Headings"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Heading elements allow you to specify that certain parts of your content are headings —or subheadings— of your content. In the same way that a book has a main title, chapter titles and subtitles, an HTML document can too. HTML contains six heading levels, &lt;h1&lt;--&lt;h6&lt; although you'll commonly only use 3–4 at most:
+&lt;h1&lt;My main title&lt;/h1&lt;
+&lt;h2&lt;My top level heading&lt;/h2&lt;
+&lt;h3&lt;My subheading&lt;/h3&lt;
+&lt;h4&lt;My sub-subheading&lt;/h4&lt;
+Now try adding a suitable title to your HTML page just above your &lt;img&lt; element.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Paragraphs"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="As explained above, &lt;p&lt; elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:
+&lt;p&lt;This is a single paragraph&lt;/p&lt;
+Add your sample text (you should have it from What should your website look like? ) into one or a few paragraphs, placed directly below your &lt;img&lt; element.
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Lists"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="A lot of the Web's content is lists and HTML has special elements for these. Marking up lists always consist of at least two elements. The most common list types are ordered and unordered lists:
+1.	Unordered lists are for lists where the order of the items doesn't matter, like a shopping list. These are wrapped in a &lt;u1&lt; element.
+2.	Ordered lists are for lists where the order of the items does matter, like a recipe. These are wrapped in an &lt;o1&lt; element.
+Each item inside the lists is put inside an &lt;li&lt; (list item) element.
+For example, if we wanted to turn the part of the following paragraph fragment into a list:
+&lt;p&lt;At Mozilla, we’re a global community of technologists, thinkers, and builders working together ... &lt;/p&lt;
+We could modify the markup to this:
+&lt;p&lt;At Mozilla, we’re a global community of&lt;/p&lt;
+
+&lt;ul&lt;
+&lt;li&lt;technologists&lt;/li&lt;
+&lt;li&lt;thinkers&lt;/li&lt;
+&lt;li&lt;builders&lt;/li&lt;
+&lt;/ul&lt;
+
+&lt;p&lt;working together ... &lt;/p&lt;
+Try adding an ordered or unordered list to your example page.
+"/>
+
+            </LinearLayout>
+        </ScrollView>
+

@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.beta.android.aakashresearchlabs.test.Lesson5.L5C2">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="Publishing a website isn't a simple topic, mainly because there are so many different ways to do it. In this article we don't aim to document all possible methods. Rather, we'll discuss the pros and cons of three broad strategies from a beginner's point of view, and then walk you through one method that will work for now."/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Getting hosting and a domain name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="If you want total control over your published website, then you'll probably need to spend money to buy:
+•	Hosting — rented file space on a hosting company's web server. You put your website files on this space, and the web server serves the content to web users who request it.
+•	A domain name — the unique address where people can find your website, like http://www.mozilla.org, or http://www.bbc.co.uk. You rent your domain name for so many years from a domain registrar.
+Many professional websites go online this way.
+In addition, you will need a File Transfer Protocol (FTP) progams to actually transfer the website files over to the server. FTP  programs vary widely, but generally you have to log on to your web server using details provided by your hosting company (e.g. username, password, host name). Then the program shows you your local files and the web server's files in two windows, so you can transfer them back and forth:"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/c5_2p"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingBottom="20dp"
+            android:text="Tips for finding hosting and domains"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:text="•	We don't promote specific commercial hosting companies here. To find hosting companies and domain name registrars, just search for &#10;web hosting&#10; and &#10;domain names&#10; to find a company selling domain name registrations. All such companies will have a feature to allow you to search for the domain name you want.
+•	Your home or office Internet Service Provider may provide some limited hosting for a small website. The available feature set will be limited, but it might be perfect for your first experiments — contact them and ask!
+•	There are a few free services available like Neocities, Blogger, and WordPress. Again, you get what you pay for, but they are ideal for your initial experiments. Free services mostly don't require FTP software for uploads either — you can just drag and drop right inside their web interface.
+•	Sometimes companies provide both hosting and domains in one package.
+"/>
+    </LinearLayout>
+</ScrollView>

@@ -71,10 +71,5 @@
             android:layout_marginRight="32dp"
             android:background="@android:color/transparent"/>
     </android.support.v7.widget.CardView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rightOption"
-        android:text="A"
-        android:layout_alignParentRight="true"/>
+
 </RelativeLayout>
